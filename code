@@ -50,7 +50,7 @@ public static boolean isCycledirected(ArrayList<Edge> graph[], boolean vis[], in
         if(rec[e.dst]){
             return true;
         }
-       lse if(!vis[e.dst]){
+       else if(!vis[e.dst]){
             if(isCycledirected(graph, vis, e.dst, rec)){
                 return true;
             }
